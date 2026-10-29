@@ -33,6 +33,9 @@ void setup() {
   Serial.println();
   Serial.println("Configuring access point...");
 
+  // if you want to see the the IP Address of the devices that connect to it, incomment the code below
+  //WiFi.onEvent([](arduino_event_id_t e, arduino_event_info_t info) { Serial.print("Device joined: "); Serial.println(IPAddress(info.wifi_ap_staipassigned.ip.addr)); }, ARDUINO_EVENT_WIFI_AP_STAIPASSIGNED);
+
   // You can remove the password parameter if you want the AP to be open.
   // a valid password must have more than 7 characters
   if (!WiFi.softAP(ssid, password)) {
