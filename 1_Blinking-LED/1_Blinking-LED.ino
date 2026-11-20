@@ -16,6 +16,6 @@ void loop() {                     // put your main code here, to run repeatedly:
   digitalWrite(ledpin, HIGH);     // The digitalWrite() function takes 2 parameters: the pin number and the value you want to write to that pin (HIGH or LOW).
   delay(1000);                    // The delay() function makes the program execution stop for n milliseconds.
   digitalWrite(ledpin, LOW); 
-  delay(1000);
+  delay(1000); 
 
 }
